@@ -11,6 +11,6 @@ export const Block = styled.section`
 `
 
 export const Element = styled.div`
-    width:1216px;
+    max-width:1216px;
     height:500px;
 `
