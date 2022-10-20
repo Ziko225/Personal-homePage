@@ -5,8 +5,6 @@ const useGetRepo = () => {
     const [result, setResult] = useState("")
     const [status, setStatus] = useState("loading")
 
-    console.log(result)
-    console.log(status)
     useEffect(() => {
         const octokit = new Octokit()
         async function getRepo() {
@@ -20,7 +18,7 @@ const useGetRepo = () => {
                 setStatus("error")
             }
         }
-        setTimeout(() => getRepo(), 500)
+        setTimeout(() => getRepo(), 1000)
 
     }, [])
     return { result, status }
