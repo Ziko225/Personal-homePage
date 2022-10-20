@@ -1,11 +1,13 @@
-import { Block, Img, Content, Caption, Title, LeadParagraph } from "./styled"
+import { Block, Img, Content, Caption, Title, LeadParagraph } from "./styled";
 import Button from "../Button";
+import ThemeButton from "../ThemeButton";
 
 const Header = () => {
     return (
         <Block>
             <Img src={'https://avatars.githubusercontent.com/u/103639958?v=4'} alt={"Nazar"} />
             <Content>
+                <ThemeButton />
                 <Caption>THIS IS</Caption>
                 <Title>Nazar Bychyk</Title>
                 <LeadParagraph>I’m a passionate Frontend Developer in love with React, currently looking for new job opportunities.</LeadParagraph>
@@ -13,6 +15,6 @@ const Header = () => {
             </Content>
         </Block>
     )
-}
+};
 
 export default Header;
