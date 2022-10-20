@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { ReactComponent as themeIco } from './themeIco.svg';
 
 export const ThemeContainer = styled.div`
@@ -25,6 +25,7 @@ export const ThemeSwitcher = styled.button`
     padding: 0;
     width: 47px;
     margin-left: 12.47px;
+    cursor: pointer;
     background-color: ${({ theme }) => theme.color.lightGrey};
 `;
 
@@ -33,5 +34,7 @@ export const StyledThemeIco = styled(themeIco)`
     margin: 2.5px;
     transition: 500ms;
 
-    // activeClass transform: translate(100%);
+    ${({ mode }) => mode && css`
+        transform: translate(100%);
+    `}
 `;
