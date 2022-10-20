@@ -13,9 +13,13 @@ export const Block = styled.section`
 export const Element = styled.div`
     display:flex;
     flex-direction:column;
-    padding:56px;
+    padding:12%;
     max-width:450px;
-    height:260px;
+    min-height:260px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    color: ${({ theme }) => theme.color.textSecondary};
     background-color: ${({ theme }) => theme.color.white};
     box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
     border: 6px solid rgba(209, 213, 218, 0.3);
@@ -34,10 +38,14 @@ export const Title = styled.h2`
     color: ${({ theme }) => theme.color.blue};
 `
 
-export const SubTitle = styled.h4`
-    
+export const SubTitle = styled.span`
+    margin: 24px 0;
 `
 
 export const Link = styled.a`
-
+    text-decoration:none;
+    color: ${({ theme }) => theme.color.blue};
+    :hover{
+        filter:brightness(120%);
+    }
 `

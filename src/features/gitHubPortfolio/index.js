@@ -9,9 +9,12 @@ const GitHubApi = () => {
             const elements = result.map(element => (
                 <Element key={element.id}>
                     <Title>{element.name}</Title>
-                    <SubTitle>{element.description}</SubTitle>
-                    <Link>Demo: {element.homepage}</Link>
-                    <Link>Code: {element.html_url}</Link>
+                    {element.description ?
+                        <SubTitle>{element.description}</SubTitle>
+                        :
+                        <SubTitle>This project doesn't have any description yet</SubTitle>}
+                    Demo: <Link target={"_blank"} href={element.html_url}>{element.homepage}</Link>
+                    Code: <Link target={"_blank"} href={element.html_url}>{element.html_url}</Link>
                 </Element>
             ))
             return (
