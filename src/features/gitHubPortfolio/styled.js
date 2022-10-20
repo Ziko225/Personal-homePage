@@ -1,21 +1,21 @@
 import styled from "styled-components";
 
 export const Block = styled.section`
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    align-items:center;
-    max-width:1216px;
-    margin:0px 0px 72px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    max-width: 1216px;
+    margin: 0px 0px 72px;
     border-radius: 4px;
-    gap:32px;
-`
+    gap: 32px;
+`;
 
 export const Element = styled.div`
-    display:flex;
-    flex-direction:column;
-    padding:12%;
-    max-width:450px;
-    min-height:260px;
+    display: flex;
+    flex-direction: column;
+    padding: 12%;
+    max-width: 450px;
+    min-height: 260px;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.4;
@@ -27,7 +27,7 @@ export const Element = styled.div`
         border: 6px solid rgba(3, 102, 214, 0.2);
     }
     border-radius: 4px;
-`
+`;
 
 export const Title = styled.h2`
     padding:0px;
@@ -36,11 +36,11 @@ export const Title = styled.h2`
     font-size: 24px;
     line-height: 29px;
     color: ${({ theme }) => theme.color.blue};
-`
+`;
 
 export const SubTitle = styled.span`
     margin: 24px 0;
-`
+`;
 
 export const Link = styled.a`
     text-decoration:none;
@@ -48,4 +48,8 @@ export const Link = styled.a`
     :hover{
         filter:brightness(120%);
     }
-`
+`;
+
+export const LinkBlock = styled.div`
+    padding: 0 0 8px;
+`;
