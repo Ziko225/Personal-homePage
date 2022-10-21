@@ -27,7 +27,7 @@ export const Content = styled.ul`
 `
 
 export const Li = styled.li`
-    color:${({ theme }) => theme.color.textSecondary};
+    color:${({ theme }) => theme.color.slateGray};
     font-size: 18px;
     margin:8px 0px 0px 24px;
     ::marker{

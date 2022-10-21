@@ -20,7 +20,7 @@ export const Img = styled.img`
 
 export const Caption = styled.span`
     line-height: 16px;
-    color: ${({ theme }) => theme.color.textSecondary};
+    color: ${({ theme }) => theme.color.slateGray};
     font-weight: 700;
     font-size: 12px;
 `;
@@ -31,5 +31,5 @@ export const Title = styled.h1`
 
 export const LeadParagraph = styled.p`
     margin: 0px 0px 32px;
-    color: ${({ theme }) => theme.color.textSecondary};
+    color: ${({ theme }) => theme.color.slateGray};
 `;

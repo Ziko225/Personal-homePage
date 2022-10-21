@@ -19,7 +19,7 @@ export const Element = styled.div`
     font-weight: 400;
     font-size: 18px;
     line-height: 1.4;
-    color: ${({ theme }) => theme.color.textSecondary};
+    color: ${({ theme }) => theme.color.slateGray};
     background-color: ${({ theme }) => theme.color.white};
     box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
     border: 6px solid rgba(209, 213, 218, 0.3);

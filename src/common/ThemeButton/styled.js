@@ -12,7 +12,7 @@ export const ThemeContainer = styled.div`
 `;
 
 export const ThemeCaption = styled.span`
-    color: ${({ theme }) => theme.color.textSecondary};
+    color: ${({ theme }) => theme.color.slateGray};
 `;
 
 export const ThemeSwitcher = styled.button`
@@ -29,7 +29,7 @@ export const ThemeSwitcher = styled.button`
 export const StyledThemeIco = styled(themeIco)`
     border-radius: 50%;
     color: ${({ theme }) => theme.color.lightBG};
-    background-color: ${({ theme }) => theme.color.textSecondary};
+    background-color: ${({ theme }) => theme.color.slateGray};
     margin: 2.5px;
     transition: 500ms;
 

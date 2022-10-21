@@ -4,9 +4,14 @@ export const themeLight = {
         lightBG: "#FBFBFE",
         lightGrey: "#E5E5E5",
         neutral: "#D1D5DA",
-        textSecondary: "#6E7E91",
+        slateGray: "#6E7E91",
         black: "#252525",
         blue: "#0366D6",
+    },
+
+    breakpoint: {
+        mobileMax: 767,
+        tabletMax: 1024,
     }
 };
 
@@ -16,7 +21,7 @@ export const themeDark = {
         lightBG: "#252525",
         lightGrey: "#363636",
         neutral: "#D1D5DA",
-        textSecondary: "#fff",
+        slateGray: "#fff",
         black: "#fff",
         blue: "#2188FF",
     }

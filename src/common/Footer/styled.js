@@ -9,7 +9,7 @@ export const Block = styled.div`
 
 export const Caption = styled.span`
     line-height: 16px;
-    color:${({ theme }) => theme.color.textSecondary};
+    color:${({ theme }) => theme.color.slateGray};
     font-weight: 700;
     font-size: 12px;
 `
@@ -24,7 +24,7 @@ export const Title = styled.h2`
 export const LeadParagraph = styled.p`
     margin:0px 0px 32px;
     max-width:670px;
-    color:${({ theme }) => theme.color.textSecondary};
+    color:${({ theme }) => theme.color.slateGray};
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
