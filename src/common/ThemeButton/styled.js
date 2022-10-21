@@ -3,23 +3,20 @@ import { ReactComponent as themeIco } from './themeIco.svg';
 
 export const ThemeContainer = styled.div`
     display: flex;
-    align-items:center;
+    align-items: center;
     margin: 0 0 38px;
     align-self: flex-end;
     font-weight: 700;
     font-size: 12px;
     line-height: 130%;
-    color: ${({ theme }) => theme.color.textSecondary};
 `;
 
 export const ThemeCaption = styled.span`
-    
+    color: ${({ theme }) => theme.color.textSecondary};
 `;
 
 export const ThemeSwitcher = styled.button`
     display: flex;
-    justify-content: start;
-    align-items: center;
     border: none;
     border-radius: 25px;
     padding: 0;
@@ -30,7 +27,9 @@ export const ThemeSwitcher = styled.button`
 `;
 
 export const StyledThemeIco = styled(themeIco)`
-    color: ${({ theme }) => theme.color.textSecondary};
+    border-radius: 50%;
+    color: ${({ theme }) => theme.color.lightBG};
+    background-color: ${({ theme }) => theme.color.textSecondary};
     margin: 2.5px;
     transition: 500ms;
 
