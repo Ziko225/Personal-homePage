@@ -14,10 +14,10 @@ const Footer = () => {
                 If you have a website, dashboard or mobile app in mind and need some help to make your ideas come to life, feel free to conatct me
             </LeadParagraph>
             <Icons>
-                <Ico href="https://github.com/Ziko225"><GitHub /></Ico>
-                <Ico href="https://www.facebook.com/Ziko255"><Facebook /></Ico>
-                <Ico href="https://www.linkedin.com/in/nazar-bychyk-502316252"><LinkedIN /></Ico>
-                <Ico href="https://www.instagram.com/nazar_bychyk"><Instagram /></Ico>
+                <Ico target={"_blank"} href="https://github.com/Ziko225"><GitHub /></Ico>
+                <Ico target={"_blank"} href="https://www.facebook.com/Ziko255"><Facebook /></Ico>
+                <Ico target={"_blank"} href="https://www.linkedin.com/in/nazar-bychyk-502316252"><LinkedIN /></Ico>
+                <Ico target={"_blank"} href="https://www.instagram.com/nazar_bychyk"><Instagram /></Ico>
             </Icons>
         </Block>
     )
