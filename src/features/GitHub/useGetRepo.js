@@ -1,9 +1,9 @@
-import { Octokit } from "octokit"
-import { useEffect, useState } from "react"
+import { Octokit } from "octokit";
+import { useEffect, useState } from "react";
 
 const useGetRepo = () => {
-    const [result, setResult] = useState("")
-    const [status, setStatus] = useState("loading")
+    const [result, setResult] = useState("");
+    const [status, setStatus] = useState("loading");
 
     useEffect(() => {
         const octokit = new Octokit()
@@ -12,16 +12,16 @@ const useGetRepo = () => {
                 const result = await octokit.request('GET /users/{username}/repos', {
                     username: 'Ziko225'
                 })
-                setResult(result.data)
-                setStatus("ok")
+                setResult(result.data);
+                setStatus("ok");
             } catch {
-                setStatus("error")
+                setStatus("error");
             }
-        }
-        setTimeout(() => getRepo(), 1000)
+        };
+        setTimeout(() => getRepo(), 1000);
 
     }, [])
     return { result, status }
-}
+};
 
-export default useGetRepo
+export default useGetRepo;

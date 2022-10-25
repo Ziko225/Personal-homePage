@@ -1,5 +1,7 @@
 import useGetRepo from "./useGetRepo";
 import { Block, Element, Title, SubTitle, Link, LinkBlock } from "./styled";
+import LoadingPage from "./LoadingPage";
+import GitHubHeader from "./GitHubHeader";
 
 const GitHubApi = () => {
     const { result, status } = useGetRepo();
@@ -7,8 +9,8 @@ const GitHubApi = () => {
     switch (status) {
         case "ok":
             const gitHubBlocks = result.map(GitHubBlock => {
-                const homepageUrl = GitHubBlock.homepage
-                const htmlUrl = GitHubBlock.html_url
+                const homepageUrl = GitHubBlock.homepage;
+                const htmlUrl = GitHubBlock.html_url;
 
                 return (
                     <Element key={GitHubBlock.id}>
@@ -28,10 +30,16 @@ const GitHubApi = () => {
             })
 
             return (
-                <Block>{gitHubBlocks}</Block>
+                <>
+                    <GitHubHeader />
+                    <Block>{gitHubBlocks}</Block>
+                </>
             )
         case "loading": return (
-            <Block><Element><h1>Loading..</h1></Element></Block>
+            <>
+                <GitHubHeader />
+                <LoadingPage />
+            </>
         )
         case "error":
             return (
@@ -43,4 +51,4 @@ const GitHubApi = () => {
     }
 };
 
-export default GitHubApi
+export default GitHubApi;
