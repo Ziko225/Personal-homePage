@@ -4,7 +4,7 @@ import Footer from "./common/Footer";
 import Header from "./common/Header";
 import Main from "./common/Main";
 import Section from "./common/Section";
-import GitHubApi from "./features/gitHubPortfolio";
+import GitHubApi from "./features/GitHub";
 import { GlobalStyle } from "./GlobalStyle";
 import { themeLight, themeDark } from "./theme";
 
@@ -22,6 +22,6 @@ function App() {
       </Main>
     </ThemeProvider>
   );
-}
+};
 
 export default App;
