@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const Block = styled.div`
-    display: flex;
-    max-width: 1089px;
-    margin: 119px 20px 63px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    margin-bottom: 73px;
 `;
 
 export const Content = styled.div`
@@ -16,6 +17,7 @@ export const Img = styled.img`
     width: 384px;
     height: 384px;
     border-radius: 50%;
+    grid-row-start: span 2;
 `;
 
 export const Caption = styled.span`

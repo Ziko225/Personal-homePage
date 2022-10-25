@@ -4,11 +4,11 @@ import { ReactComponent as themeIco } from './themeIco.svg';
 export const ThemeContainer = styled.div`
     display: flex;
     align-items: center;
-    margin: 0 0 38px;
-    align-self: flex-end;
+    justify-content: flex-end;
     font-weight: 700;
     font-size: 12px;
     line-height: 130%;
+    margin-bottom: 38px;
 `;
 
 export const ThemeCaption = styled.span`
@@ -35,5 +35,5 @@ export const StyledThemeIco = styled(themeIco)`
 
     ${({ mode }) => mode && css`
         transform: translate(100%);
-    `}
+    `};
 `;

@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Block = styled.div`
     display:flex;
     flex-direction:column;
-    max-width:1089px;
     margin:119px 20px 63px;
 `
 
