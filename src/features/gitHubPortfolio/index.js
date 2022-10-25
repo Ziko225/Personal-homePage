@@ -18,10 +18,10 @@ const GitHubApi = () => {
                             :
                             <SubTitle>This project doesn't have any description yet</SubTitle>}
                         <LinkBlock>Demo:
-                            <Link target={"_blank"} href={GitHubBlock.html_url}>{homepageUrl ? ` https://${homepageUrl.slice(23, -1).toLowerCase()}` : null}</Link>
+                            <Link target={"_blank"} href={homepageUrl}>{homepageUrl ? ` https://${homepageUrl.slice(23, -1).toLowerCase()}` : null}</Link>
                         </LinkBlock>
                         <LinkBlock>Code:
-                            <Link target={"_blank"} href={GitHubBlock.html_url}>{htmlUrl ? ` https://${htmlUrl.slice(27).toLowerCase()}` : null}</Link>
+                            <Link target={"_blank"} href={htmlUrl}>{htmlUrl ? ` https://${htmlUrl.slice(27).toLowerCase()}` : null}</Link>
                         </LinkBlock>
                     </Element>
                 )
