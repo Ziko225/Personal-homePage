@@ -8,10 +8,9 @@ export const themeLight = {
         black: "#252525",
         blue: "#0366D6",
     },
-
     breakpoint: {
         mobileMax: 767,
-        tabletMax: 1024,
+        tabletMax: 1200,
     }
 };
 
@@ -24,5 +23,9 @@ export const themeDark = {
         slateGray: "#fff",
         black: "#fff",
         blue: "#2188FF",
+    },
+    breakpoint: {
+        mobileMax: 767,
+        tabletMax: 1200,
     }
 };

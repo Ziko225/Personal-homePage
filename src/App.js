@@ -3,8 +3,8 @@ import { ThemeProvider } from "styled-components";
 import Footer from "./common/Footer";
 import Header from "./common/Header";
 import Main from "./common/Main";
-import Section from "./common/Section";
 import GitHubApi from "./features/GitHub";
+import Skillset from "./features/Skillset";
 import { GlobalStyle } from "./GlobalStyle";
 import { themeLight, themeDark } from "./theme";
 
@@ -16,7 +16,7 @@ function App() {
       <GlobalStyle />
       <Main>
         <Header />
-        <Section />
+        <Skillset />
         <GitHubApi />
         <Footer />
       </Main>
