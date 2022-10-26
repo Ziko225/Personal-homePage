@@ -6,11 +6,12 @@ export const Block = styled.div`
     flex-direction: column;
     align-items: center;
     color: ${({theme})=> theme.color.black};
+    margin-bottom: 140px;
 `;
 
 export const Title = styled.h3`
     font-weight: 400;
-    margin: 88px 0 48px;
+    margin: 0 0 48px;
 `;
 
 const rotate = keyframes`
@@ -28,5 +29,4 @@ export const Ico = styled(LoadingElement)`
     color: ${({theme})=> theme.color.blue};
     width: 160px;
     height: auto;
-    margin-bottom: 140px;
 `;

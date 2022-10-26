@@ -33,10 +33,9 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     h3{
+        color: ${({ theme }) => theme.color.black};
         font-weight: 700;
         font-size: 24px;
         line-height: 29px;
     }
-
-
-`
+`;

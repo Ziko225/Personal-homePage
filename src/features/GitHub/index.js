@@ -2,21 +2,24 @@ import useGetRepo from "./useGetRepo";
 import { Block, Element, Title, SubTitle, Link, LinkBlock } from "./styled";
 import LoadingPage from "./LoadingPage";
 import GitHubHeader from "./GitHubHeader";
+import ErrorPage from "./ErrorPage";
 
 const GitHubApi = () => {
     const { result, status } = useGetRepo();
 
-    switch (status) {
+    switch ("error") {
         case "ok":
             const gitHubBlocks = result.map(GitHubBlock => {
                 const homepageUrl = GitHubBlock.homepage;
                 const htmlUrl = GitHubBlock.html_url;
+                const name = GitHubBlock.name;
+                const description = GitHubBlock.description;
 
                 return (
                     <Element key={GitHubBlock.id}>
-                        <Title>{GitHubBlock.name[0].toUpperCase() + GitHubBlock.name.slice(1)}</Title>
-                        {GitHubBlock.description ?
-                            <SubTitle>{GitHubBlock.description}</SubTitle>
+                        <Title>{name[0].toUpperCase() + name.slice(1)}</Title>
+                        {description ?
+                            <SubTitle>{description}</SubTitle>
                             :
                             <SubTitle>This project doesn't have any description yet</SubTitle>}
                         <LinkBlock>Demo:
@@ -43,10 +46,16 @@ const GitHubApi = () => {
         )
         case "error":
             return (
-                <Block><Element><h1>Something wrong</h1></Element></Block>
+                <>
+                    <GitHubHeader />
+                    <ErrorPage />
+                </>
             )
         default: return (
-            <Block><Element><h1>Something wrong</h1></Element></Block>
+            <>
+                <GitHubHeader />
+                <ErrorPage />
+            </>
         )
     }
 };

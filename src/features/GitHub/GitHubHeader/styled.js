@@ -7,6 +7,7 @@ export const Block = styled.div`
     justify-content: center;
     align-items: center; 
     color: ${({ theme }) => theme.color.black};
+    margin-bottom: 88px;
 `;
 
 export const Ico = styled(GitHubIco)`
@@ -18,7 +19,7 @@ export const Title = styled.h2`
 `;
 
 export const SubTitle = styled.span`
-    margin: 0 0 24px;
+    margin: 0;
     font-size: 20px;
     line-height: 140%;
 `;
