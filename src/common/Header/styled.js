@@ -15,7 +15,6 @@ export const Content = styled.div`
 
 export const Img = styled.img`
     width: 384px;
-    height: 384px;
     border-radius: 50%;
     grid-row-start: span 2;
 `;
@@ -34,4 +33,9 @@ export const Title = styled.h1`
 export const LeadParagraph = styled.p`
     margin: 0px 0px 32px;
     color: ${({ theme }) => theme.color.slateGray};
+`;
+
+export const Clicker = styled.a`
+    text-decoration: none;
+    align-self: start;
 `;

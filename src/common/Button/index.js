@@ -1,10 +1,11 @@
-import { Clicker } from "./styled";
-import { ReactComponent as Ico } from './button.svg';
-import { email } from "../../links";
+import { Block, StyledIco, Title } from "./styled";
 
-const Button = () => {
+const Button = ({ ico, title }) => {
     return (
-        <Clicker href={`mailto: ${email}`} > <Ico /></Clicker >
+        <Block  >
+            {ico ? <StyledIco/> : null}
+            <Title>{title}</Title>
+        </Block >
     )
 };
 
