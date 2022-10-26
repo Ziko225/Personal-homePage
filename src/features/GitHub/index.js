@@ -7,7 +7,7 @@ import ErrorPage from "./ErrorPage";
 const GitHubApi = () => {
     const { result, status } = useGetRepo();
 
-    switch ("error") {
+    switch (status) {
         case "ok":
             const gitHubBlocks = result.map(GitHubBlock => {
                 const homepageUrl = GitHubBlock.homepage;
