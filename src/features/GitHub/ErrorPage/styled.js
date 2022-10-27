@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { ReactComponent as ErrorElement } from "./errorElement.svg";
 
 export const Block = styled.div`
