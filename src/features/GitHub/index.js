@@ -22,12 +22,24 @@ const GitHubApi = () => {
                             <SubTitle>{description}</SubTitle>
                             :
                             <SubTitle>This project doesn't have any description yet</SubTitle>}
-                        <LinkBlock>Demo:
-                            <Link target={"_blank"} href={homepageUrl}>{homepageUrl ? ` https://${homepageUrl.slice(23, -1).toLowerCase()}` : null}</Link>
-                        </LinkBlock>
-                        <LinkBlock>Code:
-                            <Link target={"_blank"} href={htmlUrl}>{htmlUrl ? ` https://${htmlUrl.slice(27).toLowerCase()}` : null}</Link>
-                        </LinkBlock>
+                        {
+                            homepageUrl ?
+                                <LinkBlock>Demo:
+                                    <Link target={"_blank"} href={homepageUrl}>{homepageUrl ? ` https://${homepageUrl.slice(23, -1).toLowerCase()}` : null}</Link>
+                                </LinkBlock>
+                                :
+                                null
+                        }
+
+                        {
+                            htmlUrl ?
+                                <LinkBlock>Code:
+                                    <Link target={"_blank"} href={htmlUrl}>{htmlUrl ? ` https://${htmlUrl.slice(27).toLowerCase()}` : null}</Link>
+                                </LinkBlock>
+                                :
+                                null
+                        }
+
                     </Element>
                 )
             })

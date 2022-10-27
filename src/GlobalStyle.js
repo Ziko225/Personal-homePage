@@ -55,6 +55,10 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 18px;
         line-height: 140%;
 
+        @media (max-width:${({ theme }) => theme.breakpoint.tabletMax}px) {
+            font-size: 15px;
+        };
+
         @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
             font-size: 14px;
         }

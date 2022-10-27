@@ -3,21 +3,28 @@ import styled from "styled-components";
 export const Block = styled.section`
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fit, 1fr);
     align-items: center;
     max-width: 1216px;
     margin: 0px 0px 120px;
     border-radius: 4px;
     gap: 32px;
+
+    @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-bottom: 48px;
+    };
 `;
 
-export const Element = styled.div`
+export const Element = styled.article`
     display: flex;
     flex-direction: column;
+    align-self: stretch;
     padding: 12%;
     max-width: 450px;
-    min-height: 260px;
+    min-height: 250px;
     font-weight: 400;
-    font-size: 18px;
     line-height: 1.4;
     color: ${({ theme }) => theme.color.slateGray};
     background-color: ${({ theme }) => theme.color.white};
@@ -30,25 +37,46 @@ export const Element = styled.div`
     };
 `;
 
-export const Title = styled.h2`
-    padding:0px;
-    margin:0px;
+export const Title = styled.h3`
+    padding: 0px;
+    margin: 0px;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
     color: ${({ theme }) => theme.color.blue};
+
+    @media (max-width:${({ theme }) => theme.breakpoint.tabletMax}px) {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 19px;
+    };
+
+    @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+    };
 `;
 
-export const SubTitle = styled.span`
+export const SubTitle = styled.p`
     margin: 24px 0;
 `;
 
 export const Link = styled.a`
-    text-decoration:none;
+    text-decoration: none;
     color: ${({ theme }) => theme.color.blue};
+    font-size: 18px;
 
     :hover{
         filter:brightness(120%);
+    };
+
+    @media (max-width:${({ theme }) => theme.breakpoint.tabletMax}px) {
+        font-size: 15px;
+    };
+
+    @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
+        font-size: 14px;
     };
 `;
 

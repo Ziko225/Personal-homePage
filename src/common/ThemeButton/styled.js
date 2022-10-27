@@ -9,10 +9,19 @@ export const ThemeContainer = styled.div`
     font-size: 12px;
     line-height: 130%;
     margin-bottom: 38px;
+
+    @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
+        align-items: start;
+        margin-top: -20px;
+    };
 `;
 
 export const ThemeCaption = styled.span`
     color: ${({ theme }) => theme.color.slateGray};
+
+    @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
+        display: none;
+    };
 `;
 
 export const ThemeSwitcher = styled.button`
@@ -20,7 +29,7 @@ export const ThemeSwitcher = styled.button`
     border: none;
     border-radius: 25px;
     padding: 0;
-    width: 47px;
+    min-width: 47px;
     margin-left: 12.47px;
     cursor: pointer;
     background-color: ${({ theme }) => theme.color.lightGrey};

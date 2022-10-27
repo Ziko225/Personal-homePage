@@ -8,6 +8,10 @@ export const Block = styled.div`
     align-items: center; 
     color: ${({ theme }) => theme.color.black};
     margin-bottom: 88px;
+
+    @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
+        margin-bottom: 24px;
+    };
 `;
 
 export const Ico = styled(GitHubIco)`
@@ -22,4 +26,8 @@ export const SubTitle = styled.span`
     margin: 0;
     font-size: 20px;
     line-height: 140%;
+
+    @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
+        font-size: 17px;
+    };
 `;
