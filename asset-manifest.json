@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "/Personal-homePage/static/js/main.a16b23cd.js",
+    "static/media/instagram.svg": "/Personal-homePage/static/media/instagram.c41e9a663b9feec380d32ec94ab0dcf2.svg",
+    "static/media/themeIco.svg": "/Personal-homePage/static/media/themeIco.70d95a365db526b0ae6d376bd0752e54.svg",
+    "static/media/github.svg": "/Personal-homePage/static/media/github.f4f28028ea44acf5cc65ce767988c444.svg",
+    "static/media/errorElement.svg": "/Personal-homePage/static/media/errorElement.f221e44b3b9e54a043633f982ebb4f36.svg",
+    "static/media/linkedIN.svg": "/Personal-homePage/static/media/linkedIN.5fac59fc662b2a089327e72909eb3444.svg",
+    "static/media/buttonElement.svg": "/Personal-homePage/static/media/buttonElement.464303b871c67d69a42137132419155e.svg",
+    "index.html": "/Personal-homePage/index.html",
+    "static/media/facebook.svg": "/Personal-homePage/static/media/facebook.f266fa5079fb10e3e6344e3b9358ce04.svg",
+    "static/media/loadingElement.svg": "/Personal-homePage/static/media/loadingElement.f0cf9f6aef365567ad9b9a0d34b8b760.svg",
+    "main.a16b23cd.js.map": "/Personal-homePage/static/js/main.a16b23cd.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.a16b23cd.js"
+  ]
+}
