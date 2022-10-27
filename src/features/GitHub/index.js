@@ -1,11 +1,11 @@
-import useGetRepo from "./useGetRepo";
 import { Block, Element, Title, SubTitle, Link, LinkBlock } from "./styled";
 import LoadingPage from "./LoadingPage";
 import GitHubHeader from "./GitHubHeader";
 import ErrorPage from "./ErrorPage";
+import useGetRepositories from "./useGetRepo";
 
 const GitHubApi = () => {
-    const { result, status } = useGetRepo();
+    const { result, status } = useGetRepositories();
 
     switch (status) {
         case "ok":

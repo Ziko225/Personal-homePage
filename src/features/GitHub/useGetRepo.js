@@ -1,7 +1,7 @@
 import { Octokit } from "octokit";
 import { useEffect, useState } from "react";
 
-const useGetRepo = () => {
+const useGetRepositories = () => {
     const [result, setResult] = useState("");
     const [status, setStatus] = useState("loading");
 
@@ -18,10 +18,10 @@ const useGetRepo = () => {
                 setStatus("error");
             }
         };
-        setTimeout(() => getRepo(), 1000);
+        setTimeout(() => getRepo(), 2000);
 
     }, [])
     return { result, status }
 };
 
-export default useGetRepo;
+export default useGetRepositories;
