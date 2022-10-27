@@ -74,4 +74,8 @@ export const LeadParagraph = styled.p`
 export const Clicker = styled.a`
     text-decoration: none;
     align-self: start;
+
+    @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
+        max-height: 45px;
+    };
 `;
