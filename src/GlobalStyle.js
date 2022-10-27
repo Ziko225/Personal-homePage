@@ -39,6 +39,7 @@ export const GlobalStyle = createGlobalStyle`
 
         @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
             font-size: 18px;
+            line-height: 22px;
         }
     }
 

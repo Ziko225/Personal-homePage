@@ -11,7 +11,6 @@ export const Block = styled.section`
 `;
 
 export const Title = styled.h2`
-    font-size: 30px;
     font-weight: 900;
     margin: 32px;
     padding-bottom: 18px;
@@ -22,6 +21,11 @@ export const Content = styled.ul`
     display: grid;
     padding: 0px;
     margin: 0px 32px 32px;
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(302px, 1fr));
+    align-items: center;
+    justify-items: center;
+    
+    @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    };
 `;
