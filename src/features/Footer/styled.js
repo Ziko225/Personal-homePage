@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
-export const Block = styled.div`
+export const Block = styled.address`
     display: flex;
     flex-direction: column;
     margin: 0 0 63px;
+    font-style: unset;
 
     @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         margin-bottom: 32px;
