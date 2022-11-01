@@ -1,8 +1,8 @@
 import { useSelector } from "react-redux";
 import { ThemeProvider } from "styled-components";
-import Footer from "./common/Footer";
 import Header from "./common/Header";
 import Main from "./common/Main";
+import Footer from "./features/Footer";
 import GitHubApi from "./features/GitHub";
 import Skillset from "./features/Skillset";
 import { GlobalStyle } from "./GlobalStyle";
