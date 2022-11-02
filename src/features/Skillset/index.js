@@ -21,12 +21,12 @@ const Skillset = () => {
                 <Li>Git</Li>
                 <Li>GitHub Pull Requests & Review</Li>
                 <Li>Responsive Web Design</Li>
+                <Li>NPM</Li>
                 <Li>Immutability</Li>
                 <Li>Markdown</Li>
                 <Li>CSS BEM convention</Li>
-                <Li>Trello</Li>
                 <Li>Scrum</Li>
-                <Li>NPM</Li>
+                <Li>Trello</Li>
                 <Li>Figma (for dev)</Li>
                 <Li>Adobe Photoshop</Li>
             </Container>
