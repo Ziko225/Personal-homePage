@@ -1,3 +1,8 @@
+const breakpoint = {
+    mobileMax: 767,
+    tabletMax: 1200,
+};
+
 export const themeLight = {
     color: {
         white: "#fff",
@@ -8,10 +13,7 @@ export const themeLight = {
         black: "#252525",
         blue: "#0366D6",
     },
-    breakpoint: {
-        mobileMax: 767,
-        tabletMax: 1200,
-    }
+    breakpoint
 };
 
 export const themeDark = {
@@ -24,8 +26,5 @@ export const themeDark = {
         black: "#fff",
         blue: "#2188FF",
     },
-    breakpoint: {
-        mobileMax: 767,
-        tabletMax: 1200,
-    }
+    breakpoint
 };
