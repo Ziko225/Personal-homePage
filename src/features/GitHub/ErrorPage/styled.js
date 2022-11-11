@@ -7,6 +7,9 @@ export const Block = styled.div`
     align-items: center;
     color: ${({ theme }) => theme.color.black};
     margin-bottom: 140px;
+    @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
+        margin-bottom: 60px;
+    }
 `;
 
 export const Ico = styled(ErrorElement)`
@@ -14,6 +17,9 @@ export const Ico = styled(ErrorElement)`
     width: 48px;
     height: auto;
     margin-bottom: 16px;
+    @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
+        margin-bottom: 12px;
+    }
 `;
 
 export const Title = styled.h2`
@@ -21,14 +27,21 @@ export const Title = styled.h2`
     font-size: 24px;
     line-height: 29px;
     margin: 0 0 32px;
+    @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
 `;
 
 export const SubTitle = styled.h3`
-    text-align:center;
+    text-align: center;
     font-weight: 400;
     font-size: 20px;
     line-height: 140%;
     margin: 0 0 32px;
+    @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
+        font-size: 14px;
+    }
 `;
 
 export const Link = styled.a`
