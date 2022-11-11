@@ -1,4 +1,4 @@
-import { Block, Title, Content } from "./styled"
+import { Block, Title, Content } from "./styled";
 
 const Container = ({ title, children }) => {
     return (

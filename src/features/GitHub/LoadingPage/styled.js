@@ -9,7 +9,7 @@ export const Block = styled.div`
     margin-bottom: 140px;
     @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         margin-bottom: 60px;
-    };
+    }
 `;
 
 export const Title = styled.h3`
@@ -20,7 +20,7 @@ export const Title = styled.h3`
     @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         font-size: 15px;
         margin-bottom: 24px;
-    };
+    }
 `;
 
 const rotate = keyframes`
@@ -40,5 +40,5 @@ export const Ico = styled(LoadingElement)`
     height: auto;
     @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         width: 100px;
-    };
+    }
 `;

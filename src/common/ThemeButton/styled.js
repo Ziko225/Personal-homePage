@@ -13,7 +13,7 @@ export const ThemeContainer = styled.div`
     @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         align-items: start;
         margin-top: -20px;
-    };
+    }
 `;
 
 export const ThemeCaption = styled.span`
@@ -21,7 +21,7 @@ export const ThemeCaption = styled.span`
 
     @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         display: none;
-    };
+    }
 `;
 
 export const ThemeSwitcher = styled.button`
@@ -44,5 +44,5 @@ export const StyledThemeIco = styled(themeIco)`
 
     ${({ mode }) => mode && css`
         transform: translate(100%);
-    `};
+    `}
 `;

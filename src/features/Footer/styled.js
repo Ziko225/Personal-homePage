@@ -8,7 +8,7 @@ export const Block = styled.address`
 
     @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         margin-bottom: 32px;
-    };
+    }
 `;
 
 export const Caption = styled.span`
@@ -23,7 +23,7 @@ export const Title = styled.h2`
 
     :hover{
         color:${({ theme }) => theme.color.blue};
-    };
+    }
 `;
 
 export const LeadParagraph = styled.p`
@@ -46,10 +46,10 @@ export const Ico = styled.a`
 
     :hover{
         color: ${({ theme }) => theme.color.blue};
-    };
+    }
 
     @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         height: 32px;
         margin-right: 16px;
-    };
+    }
 `;

@@ -11,7 +11,7 @@ export const Block = styled.section`
 
     @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         margin-bottom: 50px;
-    };
+    }
 `;
 
 export const Title = styled.h2`
@@ -22,7 +22,7 @@ export const Title = styled.h2`
 
     @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         margin: 16px;
-    };
+    }
 `;
 
 export const Content = styled.ul`
@@ -36,5 +36,5 @@ export const Content = styled.ul`
     @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         grid-template-columns: 1fr;
         margin: 0px 16px 32px;
-    };
+    }
 `;

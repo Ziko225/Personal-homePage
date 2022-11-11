@@ -9,7 +9,7 @@ const ThemeButton = () => {
     return (
         <ThemeContainer>
             <ThemeCaption >DARK MODE {"OFF"}</ThemeCaption>
-            <ThemeSwitcher onClick={() => dispatch(toggleDarkMode())}><StyledThemeIco mode={darkTheme ? "active" : null} /></ThemeSwitcher>
+            <ThemeSwitcher onClick={() => dispatch(toggleDarkMode())}><StyledThemeIco mode={darkTheme} /></ThemeSwitcher>
         </ThemeContainer>
     )
 };

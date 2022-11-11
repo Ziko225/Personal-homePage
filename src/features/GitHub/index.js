@@ -23,21 +23,17 @@ const GitHubApi = () => {
                             :
                             <SubTitle>This project doesn't have any description yet</SubTitle>}
                         {
-                            homepageUrl ?
-                                <LinkBlock>Demo:
-                                    <Link target={"_blank"} href={homepageUrl}>{homepageUrl ? ` https://${homepageUrl.slice(23, -1).toLowerCase()}` : null}</Link>
-                                </LinkBlock>
-                                :
-                                null
+                            homepageUrl &&
+                            <LinkBlock>Demo:
+                                <Link target={"_blank"} href={homepageUrl}>{homepageUrl ? ` https://${homepageUrl.slice(23, -1).toLowerCase()}` : null}</Link>
+                            </LinkBlock>
                         }
 
                         {
-                            htmlUrl ?
-                                <LinkBlock>Code:
-                                    <Link target={"_blank"} href={htmlUrl}>{htmlUrl ? ` https://${htmlUrl.slice(27).toLowerCase()}` : null}</Link>
-                                </LinkBlock>
-                                :
-                                null
+                            htmlUrl &&
+                            <LinkBlock>Code:
+                                <Link target={"_blank"} href={htmlUrl}>{htmlUrl ? ` https://${htmlUrl.slice(27).toLowerCase()}` : null}</Link>
+                            </LinkBlock>
                         }
 
                     </Element>

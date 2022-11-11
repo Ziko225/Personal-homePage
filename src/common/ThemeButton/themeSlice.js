@@ -12,7 +12,7 @@ export const themeSlice = createSlice({
       state.value = !state.value
     },
   },
-})
+});
 
 export const { toggleDarkMode } = themeSlice.actions;
 

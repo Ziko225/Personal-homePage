@@ -14,7 +14,7 @@ export const Block = styled.section`
         grid-template-columns: 1fr;
         gap: 16px;
         margin-bottom: 48px;
-    };
+    }
 `;
 
 export const Element = styled.article`
@@ -34,7 +34,7 @@ export const Element = styled.article`
 
     :hover{
         border: 6px solid rgba(3, 102, 214, 0.2);
-    };
+    }
 `;
 
 export const Title = styled.h3`
@@ -49,13 +49,13 @@ export const Title = styled.h3`
         font-weight: 700;
         font-size: 20px;
         line-height: 19px;
-    };
+    }
 
     @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         font-weight: 700;
         font-size: 16px;
         line-height: 19px;
-    };
+    }
 `;
 
 export const SubTitle = styled.p`
@@ -69,15 +69,15 @@ export const Link = styled.a`
 
     :hover{
         filter:brightness(120%);
-    };
+    }
 
     @media (max-width:${({ theme }) => theme.breakpoint.tabletMax}px) {
         font-size: 15px;
-    };
+    }
 
     @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         font-size: 14px;
-    };
+    }
 `;
 
 export const LinkBlock = styled.div`

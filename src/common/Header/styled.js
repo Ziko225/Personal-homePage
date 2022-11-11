@@ -8,7 +8,7 @@ export const Block = styled.div`
 
     @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         margin-bottom: 48px;
-    };
+    }
 `;
 
 export const Content = styled.div`
@@ -20,7 +20,7 @@ export const Content = styled.div`
         grid-row-start: span 2;
         grid-column-start: span 2;
         margin: 0;
-    };
+    }
 `;
 
 export const Img = styled.img`
@@ -31,13 +31,13 @@ export const Img = styled.img`
     @media (max-width:${({ theme }) => theme.breakpoint.tabletMax}px) {
         width: 253px;
         align-self: center;
-    };
+    }
 
     @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         grid-row-start: 1;
         width: 133px;
         margin-bottom: 16px;
-    };
+    }
 `;
 
 export const Caption = styled.span`
@@ -49,7 +49,7 @@ export const Caption = styled.span`
 
     @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         margin-bottom: 8px;
-    };
+    }
 `;
 
 export const Title = styled.h1`
@@ -58,7 +58,7 @@ export const Title = styled.h1`
     @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         grid-row-start: span 2;
         margin: 0 0 8px;
-    };
+    }
 `;
 
 export const LeadParagraph = styled.p`
@@ -68,7 +68,7 @@ export const LeadParagraph = styled.p`
 
     @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         margin-bottom: 24px;
-    };
+    }
 `;
 
 export const Clicker = styled.a`
@@ -77,5 +77,5 @@ export const Clicker = styled.a`
 
     @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         max-height: 45px;
-    };
+    }
 `;

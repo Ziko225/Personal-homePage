@@ -11,7 +11,7 @@ export const Block = styled.div`
 
     @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         margin-bottom: 24px;
-    };
+    }
 `;
 
 export const Ico = styled(GitHubIco)`
@@ -29,5 +29,5 @@ export const SubTitle = styled.span`
 
     @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         font-size: 17px;
-    };
+    }
 `;

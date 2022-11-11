@@ -1,4 +1,4 @@
-import { Content } from "./styled"
+import { Content } from "./styled";
 
 const Main = ({ children }) => {
     return (
@@ -7,4 +7,5 @@ const Main = ({ children }) => {
         </Content>
     )
 }
-export default Main
+
+export default Main;
