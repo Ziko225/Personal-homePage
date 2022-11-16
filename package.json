@@ -2,7 +2,7 @@
   "name": "personal",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ziko225.github.io/Personal-homePage/",
+  "homepage": "https://bychyk.it",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.6",
     "@testing-library/jest-dom": "^5.16.5",
