@@ -6,6 +6,7 @@ const Skillset = () => {
             <Block>
                 <Title>My skillset includes</Title>
                 <Content>
+                    <Li>TypeScript</Li>
                     <Li>JavaScript: ES6+</Li>
                     <Li>React</Li>
                     <Li>Semantic & accessible HTML</Li>
@@ -15,6 +16,7 @@ const Skillset = () => {
                     <Li>React Router</Li>
                     <Li>React Hooks</Li>
                     <Li>Redux (Toolkit)</Li>
+                    <Li>Redux Saga</Li>
                     <Li>Working with API (fetch, axios)</Li>
                     <Li>Promises, Async/Await</Li>
                     <Li>Error handling</Li>
@@ -35,7 +37,6 @@ const Skillset = () => {
             <Block>
                 <Title>What I want to learn next</Title>
                 <Content>
-                    <Li>TypeScript</Li>
                     <Li>React Context</Li>
                     <Li>Cypress</Li>
                     <Li>Node.js</Li>
