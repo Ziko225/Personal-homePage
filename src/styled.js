@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Content = styled.main`
+export const Main = styled.main`
     display: flex;
     flex-direction: column;
     max-width: 1216px;
