@@ -25,7 +25,7 @@ export const Element = styled.article`
     max-width: 450px;
     min-height: 250px;
     font-weight: 400;
-    line-height: 1.4;
+    line-height: 24px;
     color: ${({ theme }) => theme.color.slateGray};
     background-color: ${({ theme }) => theme.color.white};
     box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);

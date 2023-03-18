@@ -53,7 +53,7 @@ export const GlobalStyle = createGlobalStyle`
     p{
         font-weight: 400;
         font-size: 18px;
-        line-height: 140%;
+        line-height: 22px;
 
         @media (max-width:${({ theme }) => theme.breakpoint.tabletMax}px) {
             font-size: 15px;

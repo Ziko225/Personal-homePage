@@ -25,7 +25,7 @@ export const Title = styled.h2`
 export const SubTitle = styled.span`
     margin: 0;
     font-size: 20px;
-    line-height: 140%;
+    : 140%;
 
     @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         font-size: 17px;

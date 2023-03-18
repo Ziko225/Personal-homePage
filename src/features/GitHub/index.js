@@ -28,7 +28,6 @@ const GitHubApi = () => {
                                 <Link target={"_blank"} href={homepageUrl}>{homepageUrl ? ` https://${homepageUrl.slice(23, -1).toLowerCase()}` : null}</Link>
                             </LinkBlock>
                         }
-
                         {
                             htmlUrl &&
                             <LinkBlock>Code:

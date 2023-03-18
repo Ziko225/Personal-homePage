@@ -37,7 +37,7 @@ export const SubTitle = styled.h3`
     text-align: center;
     font-weight: 400;
     font-size: 20px;
-    line-height: 140%;
+    line-height: 22px;
     margin: 0 0 32px;
     @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         font-size: 14px;

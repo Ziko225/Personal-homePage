@@ -7,7 +7,7 @@ export const ThemeContainer = styled.div`
     justify-content: flex-end;
     font-weight: 700;
     font-size: 12px;
-    line-height: 130%;
+    line-height: 21px;
     margin-bottom: 38px;
 
     @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
