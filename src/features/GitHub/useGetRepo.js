@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 const useGetRepositories = () => {
     const [result, setResult] = useState("");
-    const [status, setStatus] = useState("loading");
+    const [status, setStatus] = useState("init");
 
     useEffect(() => {
         const octokit = new Octokit()

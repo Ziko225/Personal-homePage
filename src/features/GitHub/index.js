@@ -45,7 +45,7 @@ const GitHubApi = () => {
                     <Block>{gitHubBlocks}</Block>
                 </>
             )
-        case "loading": return (
+        case "init": return (
             <>
                 <GitHubHeader />
                 <LoadingPage />
