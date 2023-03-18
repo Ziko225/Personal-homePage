@@ -13,12 +13,17 @@ const useGetRepositories = () => {
                     username: 'Ziko225'
                 })
                 setResult(result.data);
-                setStatus("ok");
+                if (result) {
+                    setStatus("ok");
+                }
             } catch {
                 setStatus("error");
             }
         };
-        setTimeout(() => getRepo(), 2000);
+        const interval = setTimeout(() => {
+            getRepo();
+            clearInterval(interval);
+        }, 1500);
 
     }, [])
     return { result, status }
