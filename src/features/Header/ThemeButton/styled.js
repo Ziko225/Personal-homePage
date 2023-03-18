@@ -39,7 +39,7 @@ export const StyledThemeIco = styled(themeIco)`
     background-color: ${({ theme }) => theme.color.slateGray};
     margin: 2.5px;
     transition: 500ms;
-    ${({ mode }) => mode && css`
+    ${({ $darkThememe }) => $darkThememe && css`
         transform: translate(100%);
     `}
 `;

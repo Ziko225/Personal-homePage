@@ -6,7 +6,7 @@ import ThemeButton from "./ThemeButton";
 const Header = () => {
     return (
         <Block>
-            <Img src={'https://avatars.githubusercontent.com/u/103639958?v=4'} alt={""} />
+            <Img src={'https://avatars.githubusercontent.com/u/103639958'} alt={""} />
             <ThemeButton />
             <Content>
                 <Caption>THIS IS</Caption>
