@@ -1,7 +1,7 @@
 import { Block, Img, Content, Caption, Title, LeadParagraph, Clicker } from "./styled";
-import Button from "../Button";
-import ThemeButton from "../ThemeButton";
 import { email } from "../../links";
+import Button from "../../common/Button";
+import ThemeButton from "./ThemeButton";
 
 const Header = () => {
     return (

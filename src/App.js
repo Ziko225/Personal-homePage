@@ -1,18 +1,18 @@
 import { useSelector } from "react-redux";
 import { ThemeProvider } from "styled-components";
-import Header from "./common/Header";
 import Footer from "./features/Footer";
 import GitHubApi from "./features/GitHub";
+import Header from "./features/Header";
 import Skillset from "./features/Skillset";
 import { GlobalStyle } from "./GlobalStyle";
 import { Main } from "./styled";
 import { themeLight, themeDark } from "./theme";
 
 function App() {
-  const darkTheme = useSelector((state) => state.theme.value);
+  const theme = useSelector((state) => state.theme.value);
 
   return (
-    <ThemeProvider theme={darkTheme ? themeDark : themeLight}>
+    <ThemeProvider theme={theme ? themeDark : themeLight}>
       <GlobalStyle />
       <Main>
         <Header />
