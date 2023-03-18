@@ -9,7 +9,6 @@ export const ThemeContainer = styled.div`
     font-size: 12px;
     line-height: 21px;
     margin-bottom: 38px;
-
     @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         align-items: start;
         margin-top: -20px;
@@ -18,7 +17,6 @@ export const ThemeContainer = styled.div`
 
 export const ThemeCaption = styled.span`
     color: ${({ theme }) => theme.color.slateGray};
-
     @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         display: none;
     }
@@ -41,7 +39,6 @@ export const StyledThemeIco = styled(themeIco)`
     background-color: ${({ theme }) => theme.color.slateGray};
     margin: 2.5px;
     transition: 500ms;
-
     ${({ mode }) => mode && css`
         transform: translate(100%);
     `}

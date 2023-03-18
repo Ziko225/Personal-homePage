@@ -24,7 +24,6 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 900;
         font-size: 38px;
         line-height: 46px;
-
         @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
             font-size: 22px;
             line-height: 27px;
@@ -36,7 +35,6 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 900;
         font-size: 30px;
         line-height: 36px;
-
         @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
             font-size: 18px;
             line-height: 22px;
@@ -54,11 +52,9 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 400;
         font-size: 18px;
         line-height: 22px;
-
         @media (max-width:${({ theme }) => theme.breakpoint.tabletMax}px) {
             font-size: 15px;
         };
-
         @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
             font-size: 14px;
         }

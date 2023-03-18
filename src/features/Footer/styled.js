@@ -43,11 +43,9 @@ export const Ico = styled.a`
     text-decoration: none;
     color: ${({ theme }) => theme.color.black};
     cursor: pointer;
-
     :hover{
         color: ${({ theme }) => theme.color.blue};
     }
-
     @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         height: 32px;
         margin-right: 16px;
