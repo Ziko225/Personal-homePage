@@ -37,7 +37,8 @@ const Skillset = () => {
             <Block>
                 <Title>What I want to learn next</Title>
                 <Content>
-                    <Li>React Context</Li>
+                    <Li>React Native</Li>
+                    <Li>TanStack Query</Li>
                     <Li>Cypress</Li>
                     <Li>Node.js</Li>
                     <Li>SQL</Li>
