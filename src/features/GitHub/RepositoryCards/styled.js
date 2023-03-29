@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
-export const Block = styled.section`
+export const CardsList = styled.ul`
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(auto-fit, 1fr);
     align-items: center;
     max-width: 1216px;
     margin: 0px 0px 120px;
+    padding: 0;
     border-radius: 4px;
     gap: 32px;
-
     @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         grid-template-columns: 1fr;
         gap: 16px;
@@ -17,10 +17,11 @@ export const Block = styled.section`
     }
 `;
 
-export const Element = styled.article`
+export const Card = styled.li`
     display: flex;
     flex-direction: column;
     align-self: stretch;
+    list-style: none;
     padding: 12%;
     max-width: 450px;
     min-height: 250px;
@@ -31,7 +32,7 @@ export const Element = styled.article`
     box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
     border: 6px solid rgba(209, 213, 218, 0.3);
     border-radius: 4px;
-    :hover{
+    &:hover{
         border: 6px solid rgba(3, 102, 214, 0.2);
     }
 `;
@@ -63,7 +64,7 @@ export const Link = styled.a`
     text-decoration: none;
     color: ${({ theme }) => theme.color.blue};
     font-size: 18px;
-    :hover{
+    &:hover{
         filter:brightness(120%);
     }
     @media (max-width:${({ theme }) => theme.breakpoint.tabletMax}px) {
