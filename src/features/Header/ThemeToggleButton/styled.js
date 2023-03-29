@@ -22,7 +22,7 @@ export const ThemeCaption = styled.span`
     }
 `;
 
-export const ThemeSwitcher = styled.button`
+export const ThemeButton = styled.button`
     display: flex;
     border: none;
     border-radius: 25px;

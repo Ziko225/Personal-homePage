@@ -3,16 +3,17 @@ import { ThemeProvider } from "styled-components";
 import Footer from "./features/Footer";
 import GitHubApi from "./features/GitHub";
 import Header from "./features/Header";
+import { selectTheme } from "./features/Header/ThemeToggleButton/themeSlice";
 import Skillset from "./features/Skillset";
 import { GlobalStyle } from "./GlobalStyle";
 import { Main } from "./styled";
 import { themeLight, themeDark } from "./theme";
 
 function App() {
-  const theme = useSelector((state) => state.theme.value);
+  const isDarkTheme = useSelector(selectTheme);
 
   return (
-    <ThemeProvider theme={theme ? themeDark : themeLight}>
+    <ThemeProvider theme={isDarkTheme ? themeDark : themeLight}>
       <GlobalStyle />
       <Main>
         <Header />

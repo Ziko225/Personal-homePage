@@ -1,13 +1,13 @@
 import { Block, Img, Content, Caption, Title, LeadParagraph, Clicker } from "./styled";
 import { email } from "../../links";
 import Button from "../../common/Button";
-import ThemeButton from "./ThemeButton";
+import ThemeToggleButton from "./ThemeToggleButton";
 
 const Header = () => {
     return (
         <Block>
             <Img src={'https://avatars.githubusercontent.com/u/103639958'} alt={""} />
-            <ThemeButton />
+            <ThemeToggleButton />
             <Content>
                 <Caption>THIS IS</Caption>
                 <Title>Nazar Bychyk</Title>

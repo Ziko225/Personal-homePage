@@ -5,7 +5,6 @@ export const Block = styled.address`
     flex-direction: column;
     margin: 0 0 63px;
     font-style: unset;
-
     @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         margin-bottom: 32px;
     }
@@ -20,8 +19,7 @@ export const Caption = styled.span`
 
 export const Title = styled.h2`
     margin: 24px 0px 24px;
-
-    :hover{
+    &:hover{
         color:${({ theme }) => theme.color.blue};
     }
 `;
@@ -43,7 +41,7 @@ export const Ico = styled.a`
     text-decoration: none;
     color: ${({ theme }) => theme.color.black};
     cursor: pointer;
-    :hover{
+    &:hover{
         color: ${({ theme }) => theme.color.blue};
     }
     @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {

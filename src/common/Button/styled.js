@@ -8,10 +8,10 @@ export const Block = styled.div`
     border-radius: 4px;
     background-color: ${({ theme }) => theme.color.blue};
     cursor: pointer;
-    :hover{
+    &:hover{
         box-shadow: 2px -2px 0px #8CC2FF, -2px 2px 0px #8CC2FF, 2px 2px 0px #8CC2FF, -2px -2px 0px #8CC2FF;
     }
-    :active{
+    &:active{
         border: 1px solid rgba(209, 213, 218, 0.3);
         box-shadow: inset 0px 2px 0px rgba(20, 70, 32, 0.2);
         border-radius: 4px;
