@@ -3,11 +3,11 @@ import { email } from "../../links";
 import Button from "../../common/Button";
 import ThemeToggleButton from "./ThemeToggleButton";
 
-const Header = () => {
+const Header = ({ isDarkTheme, toggleTheme }) => {
     return (
         <Block>
             <Img src={'https://avatars.githubusercontent.com/u/103639958'} alt={""} />
-            <ThemeToggleButton />
+            <ThemeToggleButton isDarkTheme={isDarkTheme} onClick={toggleTheme} />
             <Content>
                 <Caption>THIS IS</Caption>
                 <Title>Nazar Bychyk</Title>
