@@ -7,8 +7,8 @@ const RepositoryCards = ({ data }) => {
                 {
                     data.map((repository) => {
                         const name = repository.name;
-                        const homepageUrl = repository.homepage;
-                        const htmlUrl = repository.html_url;
+                        const homepageUrl = repository.homepage || "";
+                        const htmlUrl = repository.html_url || "";
                         const description = repository.description;
                         const titileWithFirstUpperLetter = name[0].toUpperCase() + name.slice(1);
                         const shortHomePageUrl = homepageUrl.length > 30
@@ -36,11 +36,11 @@ const RepositoryCards = ({ data }) => {
                         );
                     })
                 }
-            </CardsList>)
+            </CardsList>);
     } else {
         return (
             <Title>{"Repositories not found"}</Title>
-        )
+        );
     }
 };
 

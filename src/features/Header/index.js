@@ -1,4 +1,4 @@
-import { Block, Img, Content, Caption, Title, LeadParagraph, Clicker } from "./styled";
+import { Block, Img, Content, Caption, Title, LeadParagraph, StyledLink } from "./styled";
 import { email } from "../../links";
 import Button from "../../common/Button";
 import ThemeToggleButton from "./ThemeToggleButton";
@@ -12,10 +12,10 @@ const Header = ({ isDarkTheme, toggleTheme }) => {
                 <Caption>THIS IS</Caption>
                 <Title>Nazar Bychyk</Title>
                 <LeadParagraph>I’m a passionate Frontend Developer in love with React, currently looking for new job opportunities.</LeadParagraph>
-                <Clicker href={`mailto: ${email}`}><Button title={"Hire Me"} ico={true} /></Clicker>
+                <StyledLink target="_blank" href={`mailto: ${email}`}><Button title={"Hire Me"} ico={true} /></StyledLink>
             </Content>
         </Block>
-    )
+    );
 };
 
 export default Header;
