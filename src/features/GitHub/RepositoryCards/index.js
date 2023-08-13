@@ -9,6 +9,7 @@ const RepositoryCards = ({ data }) => {
                         const name = repository.name || "";
                         const homepageUrl = repository.homepage;
                         const htmlUrl = repository.html_url;
+
                         const description = repository.description;
 
                         const filter = (url) => {
