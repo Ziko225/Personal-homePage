@@ -2,18 +2,24 @@ import styled from "styled-components";
 
 export const CardsList = styled.ul`
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
     align-items: center;
     max-width: 1216px;
     margin: 0px 0px 120px;
     padding: 0;
     border-radius: 4px;
     gap: 32px;
+
+    @media (max-width:${({ theme }) => theme.breakpoint.tabletMax}px) {
+        gap: 12px;
+        margin: 0 0px 48px;
+        padding: 0;
+    }
+
     @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         grid-template-columns: 1fr;
-        gap: 16px;
-        margin-bottom: 48px;
+        gap: 8px;
     }
 `;
 
@@ -22,7 +28,7 @@ export const Card = styled.li`
     flex-direction: column;
     align-self: stretch;
     list-style: none;
-    padding: 12%;
+    padding: 60px;
     min-height: 250px;
     font-weight: 400;
     line-height: 24px;
@@ -34,8 +40,13 @@ export const Card = styled.li`
     &:hover{
         border: 6px solid rgba(3, 102, 214, 0.2);
     }
-    @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
+
+    @media (max-width:${({ theme }) => theme.breakpoint.tabletMax}px) {
         padding: 40px 20px 0px;
+    }
+
+    @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
+        padding: 30px 20px 0px;
     }
 `;
 
